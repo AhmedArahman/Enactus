@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%=nameStr%></title>
+
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="/css/product.css">
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+
+    <div class="parent">
+
+
+      <img class="image1" src="/images/background1.jpg" />
+      <img class="image2" src="/images/download2.png" />
+      <img class="image40" src="/<%=name%>">
+      <img src="/<%=imageURL%>" class="image41">
+      <img class="image42" alt="We will contact you as soon as possible to give you details about your order." src="/images/u15748-43.png?crc=356557152">
+      <a href=""><img class="image43" src="/images/u15530.png"></a>
+      <img class="image44" alt="40.00 L.E" src="/<%=price%>">
+
+      <form method="post" action="email.php">
+        Name: <br>
+        <input type="text" name="Name" value=""><br>
+        Email: <br>
+        <input type="text" name="Email" value=""><br>
+        Phone Number: <br>
+        <input type="text" name="PhoneNumber" value=""><br>
+      </form>
+
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>
